@@ -1,0 +1,8 @@
+eclipse.m2.defaultRuntime=apache-maven-3.5.4
+eclipse.m2.problem.duplicateParentGroupId=ignore
+eclipse.m2.problem.duplicateParentVersion=ignore
+eclipse.m2.runtimes=apache-maven-3.5.4
+eclipse.m2.runtimesNodes/apache-maven-3.5.4/location=D\:\\java\\apache-maven-3.5.4
+eclipse.m2.runtimesNodes/apache-maven-3.5.4/type=EXTERNAL
+eclipse.m2.userSettingsFile=D\:\\java\\apache-maven-3.5.4\\conf\\settings2.xml
+eclipse.preferences.version=1
