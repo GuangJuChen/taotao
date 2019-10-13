@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="selectItemCat"/>
 			<item value="BaseResultMap"/>
 			<item value="Example_Where_Clause"/>
 			<item value="countByExample"/>

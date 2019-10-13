@@ -1,0 +1,20 @@
+package com.taotao.controller;
+
+public class ShowFile { 
+10     public static void main(String args[]){  
+11         String infname="C:\\Users\\kongxiaohan\\Desktop\\Test.java";     //默认的输入文件名
+12         try{ 
+13             File fin=new File(infname);        //转入的文件对象
+14             BufferedReader in = new BufferedReader(new FileReader(fin));  //打开输入流
+15             String s; 
+16             while((s = in.readLine()) != null){//读字符串
+17                 System.out.println(s);          //写出      
+18             } 
+19             in.close(); //关闭缓冲读入流及文件读入流的连接     
+20         }catch (FileNotFoundException e1){           //异常处理
+21             e1.printStackTrace();
+22         }catch(IOException e2){    
+23             e2.printStackTrace();
+24         } 
+25     } 
+26 }

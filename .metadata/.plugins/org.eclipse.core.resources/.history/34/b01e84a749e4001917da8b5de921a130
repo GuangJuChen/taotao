@@ -1,0 +1,23 @@
+package com.taotao.controller;
+
+/**   
+ * @ClassName: ItemCatController   
+ * @Description: 商品分类管理controller  
+ * @author: chenguangju 
+ * @date: 2019年10月1日 下午8:46:00       
+ */
+@Controller
+@RequestMapping("/item/cat")
+public class ItemCatController {
+
+	@Autowired
+	private ItemCatService itemCatService;
+	
+	@RequestMapping("/list")
+	@ResponseBody
+	public List<TreeNode> getItemCatList(@RequestParam(value="id", defaultValue="0")Long parentId) {
+		List<TreeNode> list = itemCatService.getItemCatList(parentId);
+		return list;
+	}
+	
+}
