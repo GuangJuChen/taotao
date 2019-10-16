@@ -49,5 +49,9 @@
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
 			</dependency>
+			<dependency>
+			    <groupId>com.jcraft</groupId>
+			    <artifactId>jsch</artifactId>
+			</dependency>
   </dependencies>
 </project>
