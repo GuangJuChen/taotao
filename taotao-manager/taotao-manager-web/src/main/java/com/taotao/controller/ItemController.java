@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.taotao.common.pojo.EUDataGridResult;
+import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 
@@ -26,8 +27,7 @@ public class ItemController {
 	 * @Title: getItemById
 	 * @author: chenguangju
 	 * @Description: TODO(这里用一句话描述这个方法的作用)   
-	 * @param: @param itemId
-	 * @param: @return      
+	 * @param:  itemId   
 	 * @return: TbItem
 	 */
 	@RequestMapping(value = "/item/{itemId}")
@@ -41,15 +41,31 @@ public class ItemController {
 	 * @Title: getItemList
 	 * @author: chenguangju
 	 * @Description: 分页查询列表
-	 * @param: @param page
-	 * @param: @param rows
-	 * @param: @return      
+	 * @param:  page
+	 * @param:  rows      
 	 * @return: EUDataGridResult
 	 */
 	@RequestMapping("/item/list")
 	@ResponseBody
 	public EUDataGridResult getItemList(Integer page, Integer rows) {
 		EUDataGridResult result = itemService.getItemList(page, rows);
+		return result;
+	}
+	
+	/**
+	 * 
+	 * @Title: saveItem
+	 * @Description: 添加商品
+	 * @param  item
+	 * @param  desc
+	 * @throws Exception
+	 * @return TaotaoResult
+	 */
+	@RequestMapping("/item/save")
+	@ResponseBody
+	public TaotaoResult saveItem(TbItem item, String desc) throws Exception {
+		//添加商品信息
+		TaotaoResult result = itemService.saveItem(item, desc, null);
 		return result;
 	}
 }

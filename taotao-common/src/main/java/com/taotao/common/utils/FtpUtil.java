@@ -45,12 +45,15 @@ public class FtpUtil {
 			ftp.connect(host, port);// 连接FTP服务器
 			// 如果采用默认端口，可以使用ftp.connect(host)的方式直接连接FTP服务器
 			ftp.login(username, password);// 登录
+			System.out.println(1111);
 			System.out.println(ftp.login(username, password));
 			reply = ftp.getReplyCode();
 			if (!FTPReply.isPositiveCompletion(reply)) {
 				ftp.disconnect();
 				return result;
 			}
+			//将客户端设置为被动模式
+			//ftp.enterLocalPassiveMode();
 			//切换到上传目录
 			if (!ftp.changeWorkingDirectory(basePath+filePath)) {
 				//如果目录不存在创建目录
@@ -68,7 +71,7 @@ public class FtpUtil {
 					}
 				}
 			}
-			//ftp.changeWorkingDirectory("/home/ftpuser/www/images");
+			//ftp.changeWorkingDirectory("/var/public_root/www/images");
 			//设置上传文件的类型为二进制类型
 			ftp.setFileType(FTP.BINARY_FILE_TYPE);
 			System.out.println(ftp.storeFile(filename, input));
@@ -146,8 +149,9 @@ public class FtpUtil {
 	
 	public static void main(String[] args) {
 		try {  
-	        FileInputStream in=new FileInputStream(new File("D:\\Documents\\Pictures\\images\\img10.jpg"));  
-	        boolean flag = uploadFile("192.168.0.108", 21, "ftpuser", "chenguangju", "/home/ftpuser/www/images","/2019/10/12", "gaigeming.jpg", in);  
+	        FileInputStream in=new FileInputStream(new File("D:\\Documents\\Pictures\\images\\img1.jpg"));
+	        System.out.println(in);
+	        boolean flag = uploadFile("192.168.5.128", 21, "chenguangju", "chenguangju", "/home/chenguangju/images","/2019/10/16", "gaigeming3.jpg", in);  
 	        System.out.println(flag);  
 	    } catch (FileNotFoundException e) {  
 	        e.printStackTrace();  

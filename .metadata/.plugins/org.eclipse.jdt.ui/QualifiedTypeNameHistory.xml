@@ -32,4 +32,5 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="org.apache.commons.net.ftp.FTP"/>
+<fullyQualifiedTypeName name="com.taotao.common.utils.SFTPUtil"/>
 </qualifiedTypeNameHistroy>

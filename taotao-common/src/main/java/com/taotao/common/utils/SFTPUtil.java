@@ -4,6 +4,7 @@ import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
+import com.jcraft.jsch.SftpATTRS;
 import com.jcraft.jsch.SftpException;
 
 import java.io.File;
@@ -16,11 +17,15 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Vector;
 
+import org.omg.CORBA.SystemException;
+
 /**
- * @ClassName: SFTPUtil   
- * @Description:文件传输工具类
- * @author: chenguangju 
- * @date: 2019年10月16日 下午10:58:39
+ * 
+ * @ClassName: SFTPUtil
+ * @Description: 文件上传工具类
+ * @author chenguangju
+ * @date 2019年10月17日
+ *
  */
 public class SFTPUtil implements AutoCloseable {
 
@@ -39,7 +44,7 @@ public class SFTPUtil implements AutoCloseable {
      * @throws IOException     IOException
      * @throws JSchException   JSchException
      */
-    public void connectServer(String serverIP, int port, String userName, String password) throws SocketException, IOException, JSchException {
+    public  void connectServer(String serverIP, int port, String userName, String password) throws SocketException, IOException, JSchException {
         JSch jsch = new JSch();
         // 根据用户名，主机ip，端口获取一个Session对象
         session = jsch.getSession(userName, serverIP, port);
@@ -120,23 +125,84 @@ public class SFTPUtil implements AutoCloseable {
         }
     }
     
+    /**
+     * 
+     * @Title: createDir
+     * @Description: 创建目录
+     * @param  createpath
+     * @param  sftp 参数
+     * @return void 返回类型
+     * @throws
+     */
+    public void createDir(String createpath, ChannelSftp channel) {
+    	  try {
+    	   if (isDirExist(createpath)) {
+    	    this.channel.cd(createpath); 
+    	    return;
+    	   }
+    	   String pathArry[] = createpath.split("/");
+    	   StringBuffer filePath = new StringBuffer("/");
+    	   for (String path : pathArry) {
+    	    if (path.equals("")) {
+    	     continue;
+    	    }
+    	    filePath.append(path + "/");
+    	    if (isDirExist(filePath.toString())) {
+    	    	channel.cd(filePath.toString());
+    	    } else {
+    	     // 建立目录
+    	    	channel.mkdir(filePath.toString());
+    	     // 进入并设置为当前目录
+    	    	channel.cd(filePath.toString());
+    	    }
+    	   }
+    	   this.channel.cd(createpath);
+    	  } catch (SftpException e) {
+    	   System.out.println("创建路径错误");
+    	  }
+    	 }
+
+    /**
+     * 
+     * @Title: isDirExist
+     * @Description: 判断目录是否存在
+     * @param  directory
+     * @return boolean 返回类型
+     * @throws
+     */
+	 public boolean isDirExist(String directory) {
+	  boolean isDirExistFlag = false;
+	  try {
+	   SftpATTRS sftpATTRS = channel.lstat(directory);
+	   isDirExistFlag = true;
+	   return sftpATTRS.isDir();
+	  } catch (Exception e) {
+	   if (e.getMessage().toLowerCase().equals("no such file")) {
+	    isDirExistFlag = false;
+	   }
+	  }
+	  return isDirExistFlag;
+	 }
+
+    
     public static void main(String[] args) {
 		SFTPUtil sftpUtil = new SFTPUtil();
 		try {
-			sftpUtil.connectServer("192.168.0.106", 22, "ftpuser", "chenguangju");
-			sftpUtil.uploadFile("img1.jpg","D:\\images\\img10.jpg");
+			sftpUtil.connectServer("192.168.5.130", 22, "ftpuser", "chenguangju");
+			sftpUtil.uploadFile("www/images/1.jpg", "D:\\Documents\\Pictures\\images\\img1.jpg");
+			System.out.println("上传成功");
 		} catch (SocketException e) {
-			// TODO Auto-generated catch block
+			// socket异常
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			// IO异常
 			e.printStackTrace();
 		} catch (JSchException e) {
-			// TODO Auto-generated catch block
+			// JSch异常
 			e.printStackTrace();
 		}
 		catch (SftpException e) {
-			// TODO Auto-generated catch block
+			// Sftp异常
 			e.printStackTrace();
 		}
 	}
