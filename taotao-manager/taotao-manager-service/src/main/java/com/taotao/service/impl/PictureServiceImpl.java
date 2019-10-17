@@ -53,7 +53,8 @@ public class PictureServiceImpl implements PictureService {
 			sftpUtil.connectServer(SFTP_ADDRESS, SFTP_PORT, SFTP_USERNAME, SFTP_PASSWORD);
 			//sftpUtil.createDir("www/images"+imagePath, channel);
 			//sftpUtil.uploadFile("www/images"+imagePath+"/"+newName, "D:\\Documents\\Pictures\\images\\img1.jpg");
-			sftpUtil.uploadFile("www/images"+"/"+newName, "D:\\Documents\\Pictures\\images\\img10.jpg");
+			//sftpUtil.uploadFile2("www/images"+"/"+newName, "D:\\Documents\\Pictures\\images\\img10.jpg");
+			sftpUtil.uploadFile2("www/images"+"/"+newName, uploadFile.getInputStream());
 			System.out.println("上传成功");
 			sftpUtil.close();
 		} catch (Exception e) {

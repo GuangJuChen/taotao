@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.List;
@@ -123,6 +124,12 @@ public class SFTPUtil implements AutoCloseable {
                 throw new IOException("sftp server not login");
             channel.put(in, remoteFile);
         }
+    }
+    
+    public void uploadFile2(String remoteFile, InputStream input) throws SftpException, IOException {
+        if (channel == null)
+            throw new IOException("sftp server not login");
+        channel.put(input, remoteFile);
     }
     
     /**

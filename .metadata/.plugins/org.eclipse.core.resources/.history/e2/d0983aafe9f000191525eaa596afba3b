@@ -1,0 +1,10 @@
+#FTP相关配置
+#FTP的相关地址
+SFTP_ADDRESS=192.168.0.113
+SFTP_PORT=22
+SFTP_USERNAME=ftpuser
+SFTP_PASSWORD=chenguangju
+SFTP_BASE_PATH=/home/ftpuser/www/images
+#图片服务器的相关地址
+#图片服务器的基础路径
+IMAGE_BASE_URL=http://192.168.0.106/images/
