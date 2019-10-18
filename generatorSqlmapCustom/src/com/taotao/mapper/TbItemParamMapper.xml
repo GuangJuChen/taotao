@@ -4,6 +4,7 @@
   <resultMap id="BaseResultMap" type="com.taotao.pojo.TbItemParam">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="item_cat_id" jdbcType="BIGINT" property="itemCatId" />
+    <result column="item_cat_name" jdbcType="VARCHAR" property="itemCatName" />
     <result column="created" jdbcType="TIMESTAMP" property="created" />
     <result column="updated" jdbcType="TIMESTAMP" property="updated" />
   </resultMap>
@@ -69,7 +70,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, item_cat_id, created, updated
+    id, item_cat_id, item_cat_name, created, updated
   </sql>
   <sql id="Blob_Column_List">
     param_data
@@ -123,10 +124,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.taotao.pojo.TbItemParam">
-    insert into tb_item_param (id, item_cat_id, created, 
-      updated, param_data)
-    values (#{id,jdbcType=BIGINT}, #{itemCatId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
-      #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR})
+    insert into tb_item_param (id, item_cat_id, item_cat_name, 
+      created, updated, param_data
+      )
+    values (#{id,jdbcType=BIGINT}, #{itemCatId,jdbcType=BIGINT}, #{itemCatName,jdbcType=VARCHAR}, 
+      #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.taotao.pojo.TbItemParam">
     insert into tb_item_param
@@ -136,6 +139,9 @@
       </if>
       <if test="itemCatId != null">
         item_cat_id,
+      </if>
+      <if test="itemCatName != null">
+        item_cat_name,
       </if>
       <if test="created != null">
         created,
@@ -153,6 +159,9 @@
       </if>
       <if test="itemCatId != null">
         #{itemCatId,jdbcType=BIGINT},
+      </if>
+      <if test="itemCatName != null">
+        #{itemCatName,jdbcType=VARCHAR},
       </if>
       <if test="created != null">
         #{created,jdbcType=TIMESTAMP},
@@ -180,6 +189,9 @@
       <if test="record.itemCatId != null">
         item_cat_id = #{record.itemCatId,jdbcType=BIGINT},
       </if>
+      <if test="record.itemCatName != null">
+        item_cat_name = #{record.itemCatName,jdbcType=VARCHAR},
+      </if>
       <if test="record.created != null">
         created = #{record.created,jdbcType=TIMESTAMP},
       </if>
@@ -198,6 +210,7 @@
     update tb_item_param
     set id = #{record.id,jdbcType=BIGINT},
       item_cat_id = #{record.itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{record.itemCatName,jdbcType=VARCHAR},
       created = #{record.created,jdbcType=TIMESTAMP},
       updated = #{record.updated,jdbcType=TIMESTAMP},
       param_data = #{record.paramData,jdbcType=LONGVARCHAR}
@@ -209,6 +222,7 @@
     update tb_item_param
     set id = #{record.id,jdbcType=BIGINT},
       item_cat_id = #{record.itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{record.itemCatName,jdbcType=VARCHAR},
       created = #{record.created,jdbcType=TIMESTAMP},
       updated = #{record.updated,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
@@ -220,6 +234,9 @@
     <set>
       <if test="itemCatId != null">
         item_cat_id = #{itemCatId,jdbcType=BIGINT},
+      </if>
+      <if test="itemCatName != null">
+        item_cat_name = #{itemCatName,jdbcType=VARCHAR},
       </if>
       <if test="created != null">
         created = #{created,jdbcType=TIMESTAMP},
@@ -236,6 +253,7 @@
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.taotao.pojo.TbItemParam">
     update tb_item_param
     set item_cat_id = #{itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{itemCatName,jdbcType=VARCHAR},
       created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP},
       param_data = #{paramData,jdbcType=LONGVARCHAR}
@@ -244,6 +262,7 @@
   <update id="updateByPrimaryKey" parameterType="com.taotao.pojo.TbItemParam">
     update tb_item_param
     set item_cat_id = #{itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{itemCatName,jdbcType=VARCHAR},
       created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
@@ -251,6 +270,7 @@
   <resultMap id="BaseResultMap" type="com.taotao.pojo.TbItemParam">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="item_cat_id" jdbcType="BIGINT" property="itemCatId" />
+    <result column="item_cat_name" jdbcType="VARCHAR" property="itemCatName" />
     <result column="created" jdbcType="TIMESTAMP" property="created" />
     <result column="updated" jdbcType="TIMESTAMP" property="updated" />
   </resultMap>
@@ -316,7 +336,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, item_cat_id, created, updated
+    id, item_cat_id, item_cat_name, created, updated
   </sql>
   <sql id="Blob_Column_List">
     param_data
@@ -370,10 +390,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.taotao.pojo.TbItemParam">
-    insert into tb_item_param (id, item_cat_id, created, 
-      updated, param_data)
-    values (#{id,jdbcType=BIGINT}, #{itemCatId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
-      #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR})
+    insert into tb_item_param (id, item_cat_id, item_cat_name, 
+      created, updated, param_data
+      )
+    values (#{id,jdbcType=BIGINT}, #{itemCatId,jdbcType=BIGINT}, #{itemCatName,jdbcType=VARCHAR}, 
+      #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.taotao.pojo.TbItemParam">
     insert into tb_item_param
@@ -383,6 +405,9 @@
       </if>
       <if test="itemCatId != null">
         item_cat_id,
+      </if>
+      <if test="itemCatName != null">
+        item_cat_name,
       </if>
       <if test="created != null">
         created,
@@ -400,6 +425,9 @@
       </if>
       <if test="itemCatId != null">
         #{itemCatId,jdbcType=BIGINT},
+      </if>
+      <if test="itemCatName != null">
+        #{itemCatName,jdbcType=VARCHAR},
       </if>
       <if test="created != null">
         #{created,jdbcType=TIMESTAMP},
@@ -427,6 +455,9 @@
       <if test="record.itemCatId != null">
         item_cat_id = #{record.itemCatId,jdbcType=BIGINT},
       </if>
+      <if test="record.itemCatName != null">
+        item_cat_name = #{record.itemCatName,jdbcType=VARCHAR},
+      </if>
       <if test="record.created != null">
         created = #{record.created,jdbcType=TIMESTAMP},
       </if>
@@ -445,6 +476,7 @@
     update tb_item_param
     set id = #{record.id,jdbcType=BIGINT},
       item_cat_id = #{record.itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{record.itemCatName,jdbcType=VARCHAR},
       created = #{record.created,jdbcType=TIMESTAMP},
       updated = #{record.updated,jdbcType=TIMESTAMP},
       param_data = #{record.paramData,jdbcType=LONGVARCHAR}
@@ -456,6 +488,7 @@
     update tb_item_param
     set id = #{record.id,jdbcType=BIGINT},
       item_cat_id = #{record.itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{record.itemCatName,jdbcType=VARCHAR},
       created = #{record.created,jdbcType=TIMESTAMP},
       updated = #{record.updated,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
@@ -467,6 +500,9 @@
     <set>
       <if test="itemCatId != null">
         item_cat_id = #{itemCatId,jdbcType=BIGINT},
+      </if>
+      <if test="itemCatName != null">
+        item_cat_name = #{itemCatName,jdbcType=VARCHAR},
       </if>
       <if test="created != null">
         created = #{created,jdbcType=TIMESTAMP},
@@ -483,6 +519,7 @@
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.taotao.pojo.TbItemParam">
     update tb_item_param
     set item_cat_id = #{itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{itemCatName,jdbcType=VARCHAR},
       created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP},
       param_data = #{paramData,jdbcType=LONGVARCHAR}
@@ -491,6 +528,7 @@
   <update id="updateByPrimaryKey" parameterType="com.taotao.pojo.TbItemParam">
     update tb_item_param
     set item_cat_id = #{itemCatId,jdbcType=BIGINT},
+      item_cat_name = #{itemCatName,jdbcType=VARCHAR},
       created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}

@@ -12,10 +12,12 @@ import com.taotao.common.utils.IDUtils;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.mapper.TbItemDescMapper;
 import com.taotao.mapper.TbItemMapper;
+import com.taotao.mapper.TbItemParamItemMapper;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
 import com.taotao.pojo.TbItemExample;
 import com.taotao.pojo.TbItemExample.Criteria;
+import com.taotao.pojo.TbItemParamItem;
 import com.taotao.service.ItemService;
 
 /**   
@@ -31,6 +33,8 @@ public class ItemServiceImpl implements ItemService {
 	private TbItemMapper itemMapper;
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
+	@Autowired 
+	private TbItemParamItemMapper itemParamItemMapper;
 	
 	/**
 	 * 添加商品
@@ -48,18 +52,57 @@ public class ItemServiceImpl implements ItemService {
 		item.setUpdated(date);
 		itemMapper.insert(item);
 		//添加商品描述
-		//创建TbItemDesc对象
-		TbItemDesc itemDesc = new TbItemDesc();
-		//获得一个商品id
-		itemDesc.setItemId(id);
-		itemDesc.setItemDesc(desc);
-		itemDesc.setCreated(date);
-		itemDesc.setUpdated(date);
-		//插入数据
-		itemDescMapper.insert(itemDesc);
-		return TaotaoResult.ok("添加商品成功");
+		TaotaoResult result = insertItemDesc(item.getId(), desc);
+		if (result.getStatus() != 200) {
+			throw new Exception();
+		}
+		//添加商品规格
+		result = insertItemParamItem(item.getId(), itemParams);
+		if (result.getStatus() != 200) {
+			throw new Exception();
+		}
+		return TaotaoResult.ok();
 		
 	}
+	
+	/**
+	 * 添加商品描述
+	 * @param itemId
+	 * @param desc
+	 * @return
+	 */
+	private TaotaoResult insertItemDesc(Long itemId, String desc) {
+		TbItemDesc itemDesc = new TbItemDesc();
+		itemDesc.setItemId(itemId);
+		itemDesc.setItemDesc(desc);
+		itemDesc.setCreated(new Date());
+		itemDesc.setUpdated(new Date());
+		itemDescMapper.insert(itemDesc);
+		return TaotaoResult.ok();
+	}
+	
+	/**
+	 * 添加规格参数
+	 * <p>Title: insertItemParamItem</p>
+	 * <p>Description: </p>
+	 * @param itemId
+	 * @param itemParam
+	 * @return
+	 */
+	private TaotaoResult insertItemParamItem(Long itemId, String itemParam) {
+		//创建一个pojo
+		TbItemParamItem itemParamItem = new TbItemParamItem();
+		itemParamItem.setItemId(itemId);
+		itemParamItem.setParamData(itemParam);
+		itemParamItem.setCreated(new Date());
+		itemParamItem.setUpdated(new Date());
+		//向表中插入数据
+		itemParamItemMapper.insert(itemParamItem);
+		
+		return TaotaoResult.ok();
+		
+	}
+	
 	/**   
 	 * <p>Title: getItemById</p>   
 	 * <p>Description: 根据商品id获取商品信息 </p>   

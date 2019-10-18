@@ -6,6 +6,8 @@ public class TbItemParam {
     private Long id;
 
     private Long itemCatId;
+    
+    private String itemCatName;
 
     private Date created;
 
@@ -29,7 +31,15 @@ public class TbItemParam {
         this.itemCatId = itemCatId;
     }
 
-    public Date getCreated() {
+    public String getItemCatName() {
+		return itemCatName;
+	}
+
+	public void setItemCatName(String itemCatName) {
+		this.itemCatName = itemCatName;
+	}
+
+	public Date getCreated() {
         return created;
     }
 
@@ -52,4 +62,5 @@ public class TbItemParam {
     public void setParamData(String paramData) {
         this.paramData = paramData == null ? null : paramData.trim();
     }
+    
 }

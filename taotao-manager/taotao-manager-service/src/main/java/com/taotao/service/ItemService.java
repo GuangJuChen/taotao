@@ -12,7 +12,28 @@ import com.taotao.pojo.TbItem;
  */
 public interface ItemService {
 	
-	TaotaoResult saveItem(TbItem item, String desc, String itemParams) throws Exception;
+	/**
+	 * 
+	 * @param itemId
+	 * @return TbItem
+	 */
 	TbItem getItemById(long itemId);
+	
+	/**
+	 * 
+	 * @param page
+	 * @param rows
+	 * @return EUDataGridResult
+	 */
 	EUDataGridResult getItemList(int page,int rows);
+	
+	/**
+	 * 
+	 * @param item
+	 * @param desc
+	 * @param itemParams
+	 * @return TaotaoResult
+	 * @throws Exception
+	 */
+	TaotaoResult saveItem(TbItem item, String desc, String itemParams) throws Exception;
 }

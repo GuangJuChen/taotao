@@ -26,7 +26,7 @@ public class ItemController {
 	/**
 	 * @Title: getItemById
 	 * @author: chenguangju
-	 * @Description: TODO(这里用一句话描述这个方法的作用)   
+	 * @Description: 查询商品   
 	 * @param:  itemId   
 	 * @return: TbItem
 	 */
@@ -63,9 +63,9 @@ public class ItemController {
 	 */
 	@RequestMapping("/item/save")
 	@ResponseBody
-	public TaotaoResult saveItem(TbItem item, String desc) throws Exception {
+	public TaotaoResult saveItem(TbItem item, String desc,String itemParams) throws Exception {
 		//添加商品信息
-		TaotaoResult result = itemService.saveItem(item, desc, null);
+		TaotaoResult result = itemService.saveItem(item, desc, itemParams);
 		return result;
 	}
 }
