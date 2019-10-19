@@ -20,6 +20,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\java\eclipse\workspace\taotao-rest"/>
+			<item value="D:\java\eclipse\workspace\taotao-portal"/>
 			<item value="D:\java\eclipse\workspace\taotao-manager"/>
 			<item value="D:\java\eclipse\workspace\taotao-common"/>
 			<item value="D:\java\eclipse\workspace\taotao-parent"/>

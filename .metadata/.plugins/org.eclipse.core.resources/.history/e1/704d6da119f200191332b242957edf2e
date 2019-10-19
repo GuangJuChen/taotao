@@ -1,0 +1,11 @@
+package com.taotao.common.pojo;
+
+public class CatNode {
+
+	@JsonProperty("n")
+	private String name;
+	@JsonProperty("u")
+	private String url;
+	@JsonProperty("i")
+	private List<?> item;
+}
