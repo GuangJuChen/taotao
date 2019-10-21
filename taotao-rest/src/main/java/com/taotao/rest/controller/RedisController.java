@@ -10,11 +10,13 @@ import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.rest.service.RedisService;
 
 /**
- * 
- * @ClassName: RedisController   
- * @Description:缓存同步Controller 
- * @author: chenguangju 
- * @date: 2019年10月19日 上午10:52:27
+ * 缓存同步Controller
+ * <p>Title: RedisController</p>
+ * <p>Description: </p>
+ * <p>Company: www.itcast.com</p> 
+ * @author	入云龙
+ * @date	2015年9月9日下午3:47:18
+ * @version 1.0
  */
 @Controller
 @RequestMapping("/cache/sync")

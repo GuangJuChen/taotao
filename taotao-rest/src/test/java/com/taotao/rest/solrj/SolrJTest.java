@@ -17,7 +17,7 @@ public class SolrJTest {
 	@Test
 	public void addDocument() throws Exception {
 		//创建一连接
-		SolrServer solrServer = new HttpSolrServer("http://192.168.25.154:8080/solr");
+		SolrServer solrServer = new HttpSolrServer("http://192.168.5.130:8080/solr");
 		//创建一个文档对象
 		SolrInputDocument document = new SolrInputDocument();
 		document.addField("id", "test001");
@@ -32,7 +32,7 @@ public class SolrJTest {
 	@Test
 	public void deleteDocument() throws Exception {
 		//创建一连接
-		SolrServer solrServer = new HttpSolrServer("http://192.168.25.154:8080/solr");
+		SolrServer solrServer = new HttpSolrServer("http://192.168.5.130:8080/solr");
 		//solrServer.deleteById("test001");
 		solrServer.deleteByQuery("*:*");
 		solrServer.commit();
@@ -40,7 +40,7 @@ public class SolrJTest {
 	
 	@Test
 	public void queryDocument() throws Exception {
-		SolrServer solrServer = new HttpSolrServer("http://192.168.25.154:8080/solr");
+		SolrServer solrServer = new HttpSolrServer("http://192.168.5.130:8080/solr");
 		//创建一个查询对象
 		SolrQuery query = new SolrQuery();
 		//设置查询条件

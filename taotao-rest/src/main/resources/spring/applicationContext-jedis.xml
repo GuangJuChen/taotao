@@ -30,9 +30,9 @@
 		<!-- 连接耗尽时是否阻塞, false报异常,ture阻塞直到超时, 默认true -->
 		<property name="blockWhenExhausted" value="false" />
 	</bean>	
-	<!-- jedis客户端单机版 -->
+	<!--jedis客户端单机版 -->
 	<!-- <bean id="redisClient" class="redis.clients.jedis.JedisPool">
-		<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
+		<constructor-arg name="host" value="192.168.5.130"></constructor-arg>
 		<constructor-arg name="port" value="6379"></constructor-arg>
 		<constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
 	</bean>
@@ -44,27 +44,27 @@
 		<constructor-arg name="nodes">
 			<set>
 				<bean class="redis.clients.jedis.HostAndPort">
-					<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
+					<constructor-arg name="host" value="192.168.5.130"></constructor-arg>
 					<constructor-arg name="port" value="7001"></constructor-arg>
 				</bean>
 				<bean class="redis.clients.jedis.HostAndPort">
-					<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
+					<constructor-arg name="host" value="192.168.5.130"></constructor-arg>
 					<constructor-arg name="port" value="7002"></constructor-arg>
 				</bean>
 				<bean class="redis.clients.jedis.HostAndPort">
-					<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
+					<constructor-arg name="host" value="192.168.5.130"></constructor-arg>
 					<constructor-arg name="port" value="7003"></constructor-arg>
 				</bean>
 				<bean class="redis.clients.jedis.HostAndPort">
-					<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
+					<constructor-arg name="host" value="192.168.5.130"></constructor-arg>
 					<constructor-arg name="port" value="7004"></constructor-arg>
 				</bean>
 				<bean class="redis.clients.jedis.HostAndPort">
-					<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
+					<constructor-arg name="host" value="192.168.5.130"></constructor-arg>
 					<constructor-arg name="port" value="7005"></constructor-arg>
 				</bean>
 				<bean class="redis.clients.jedis.HostAndPort">
-					<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
+					<constructor-arg name="host" value="192.168.5.130"></constructor-arg>
 					<constructor-arg name="port" value="7006"></constructor-arg>
 				</bean>
 			</set>

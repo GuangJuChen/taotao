@@ -17,13 +17,12 @@ import com.taotao.portal.pojo.CartItem;
 import com.taotao.portal.service.CartService;
 
 /**
- * 购物车Controller
- * <p>Title: CartController</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月15日下午3:12:59
- * @version 1.0
+ * 
+ * @ClassName: CartController
+ * @Description: 购物车Controller
+ * @author chenguangju
+ * @date 2019年10月21日
+ *
  */
 @Controller
 @RequestMapping("/cart")

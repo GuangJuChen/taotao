@@ -13,10 +13,11 @@ import com.taotao.portal.service.SearchService;
 
 /**
  * 
- * @ClassName: SearchServiceImpl   
- * @Description:商品搜索Service   
- * @author: chenguangju 
- * @date: 2019年10月19日 下午12:07:02
+ * @ClassName: SearchServiceImpl
+ * @Description: 商品搜索Service
+ * @author chenguangju
+ * @date 2019年10月21日
+ *
  */
 
 @Service

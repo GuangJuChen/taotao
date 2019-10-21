@@ -9,11 +9,13 @@ import com.taotao.pojo.TbUser;
 import com.taotao.portal.service.UserService;
 
 /**
- * 
- * @ClassName: UserServiceImpl   
- * @Description: 用户管理Service 
- * @author: chenguangju 
- * @date: 2019年10月19日 下午12:07:15
+ * 用户管理Service
+ * <p>Title: UserServiceImpl</p>
+ * <p>Description: </p>
+ * <p>Company: www.itcast.com</p> 
+ * @author	入云龙
+ * @date	2015年9月15日上午10:54:10
+ * @version 1.0
  */
 @Service
 public class UserServiceImpl implements UserService {

@@ -15,11 +15,13 @@ import com.taotao.rest.pojo.CatResult;
 import com.taotao.rest.service.ItemCatService;
 
 /**
- * 
- * @ClassName: ItemCatServiceImpl   
- * @Description:商品分类服务   
- * @author: chenguangju 
- * @date: 2019年10月19日 上午10:49:36
+ * 商品分类服务
+ * <p>Title: ItemCatServiceImpl</p>
+ * <p>Description: </p>
+ * <p>Company: www.itcast.com</p> 
+ * @author	入云龙
+ * @date	2015年9月7日下午2:44:41
+ * @version 1.0
  */
 @Service
 public class ItemCatServiceImpl implements ItemCatService {
@@ -41,7 +43,7 @@ public class ItemCatServiceImpl implements ItemCatService {
 	 * <p>Title: getCatList</p>
 	 * <p>Description: </p>
 	 * @param parentId
-	 * @return List
+	 * @return
 	 */
 	private List<?> getCatList(long parentId) {
 		//创建查询条件

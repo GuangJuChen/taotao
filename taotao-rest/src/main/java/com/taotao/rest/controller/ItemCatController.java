@@ -12,11 +12,13 @@ import com.taotao.rest.pojo.CatResult;
 import com.taotao.rest.service.ItemCatService;
 
 /**
- * 
- * @ClassName: ItemCatController   
- * @Description:商品分类列表   
- * @author: chenguangju 
- * @date: 2019年10月19日 上午10:51:39
+ * 商品分类列表
+ * <p>Title: ItemCatController</p>
+ * <p>Description: </p>
+ * <p>Company: www.itcast.com</p> 
+ * @author	入云龙
+ * @date	2015年9月7日下午3:02:39
+ * @version 1.0
  */
 @Controller
 public class ItemCatController {
