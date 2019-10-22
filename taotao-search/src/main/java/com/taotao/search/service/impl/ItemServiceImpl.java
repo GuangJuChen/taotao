@@ -15,6 +15,14 @@ import com.taotao.search.mapper.ItemMapper;
 import com.taotao.search.pojo.Item;
 import com.taotao.search.service.ItemService;
 
+/**
+ * 
+ * @ClassName: ItemServiceImpl
+ * @Description: 商品写入索引库
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
+ */
 @Service
 public class ItemServiceImpl implements ItemService {
 

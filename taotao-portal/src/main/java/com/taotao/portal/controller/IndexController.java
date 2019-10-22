@@ -11,6 +11,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.portal.service.ContentService;
 
+/**
+ * 
+ * @ClassName: IndexController
+ * @Description: 广告页
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
+ */
 @Controller
 public class IndexController {
 	

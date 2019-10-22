@@ -9,13 +9,12 @@ import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.search.service.ItemService;
 
 /**
- * 索引库维护
- * <p>Title: ItemController</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月11日下午2:50:45
- * @version 1.0
+ * 
+ * @ClassName: ItemController
+ * @Description: 索引库维护
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
  */
 @Controller
 @RequestMapping("/manager")

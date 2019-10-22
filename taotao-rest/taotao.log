@@ -1,355 +1,239 @@
-2019-10-21 16:08:19,493 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.web.context.support.XmlWebApplicationContext]-[DEBUG] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@605d0669]
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.web.context.support.XmlWebApplicationContext]-[DEBUG] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@2cfa583b]
-2019-10-21 16:08:19,494 [localhost-startStop-1] [org.springframework.ui.context.support.UiApplicationContextUtils]-[DEBUG] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@773861c5]
-2019-10-21 16:08:19,495 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cecb50e: defining beans [contentController,itemCatController,itemController,redisController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6ffccbce
-2019-10-21 16:08:19,495 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'contentController'
-2019-10-21 16:08:19,495 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'contentController'
-2019-10-21 16:08:19,496 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Registered injected element on class [com.taotao.rest.controller.ContentController]: AutowiredFieldElement for private com.taotao.rest.service.ContentService com.taotao.rest.controller.ContentController.contentService
-2019-10-21 16:08:19,496 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'contentController' to allow for resolving potential circular references
-2019-10-21 16:08:19,498 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Processing injected method of bean 'contentController': AutowiredFieldElement for private com.taotao.rest.service.ContentService com.taotao.rest.controller.ContentController.contentService
-2019-10-21 16:08:19,499 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentServiceImpl'
-2019-10-21 16:08:19,499 [localhost-startStop-1] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]-[DEBUG] Autowiring by type from bean name 'contentController' to bean named 'contentServiceImpl'
-2019-10-21 16:08:19,499 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'contentController'
-2019-10-21 16:08:19,499 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'itemCatController'
-2019-10-21 16:08:19,499 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'itemCatController'
-2019-10-21 16:08:19,499 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Registered injected element on class [com.taotao.rest.controller.ItemCatController]: AutowiredFieldElement for private com.taotao.rest.service.ItemCatService com.taotao.rest.controller.ItemCatController.itemCatService
-2019-10-21 16:08:19,499 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'itemCatController' to allow for resolving potential circular references
-2019-10-21 16:08:19,501 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Processing injected method of bean 'itemCatController': AutowiredFieldElement for private com.taotao.rest.service.ItemCatService com.taotao.rest.controller.ItemCatController.itemCatService
-2019-10-21 16:08:19,501 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'itemCatServiceImpl'
-2019-10-21 16:08:19,501 [localhost-startStop-1] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]-[DEBUG] Autowiring by type from bean name 'itemCatController' to bean named 'itemCatServiceImpl'
-2019-10-21 16:08:19,501 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'itemCatController'
-2019-10-21 16:08:19,501 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'itemController'
-2019-10-21 16:08:19,501 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'itemController'
-2019-10-21 16:08:19,502 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Registered injected element on class [com.taotao.rest.controller.ItemController]: AutowiredFieldElement for private com.taotao.rest.service.ItemService com.taotao.rest.controller.ItemController.itemService
-2019-10-21 16:08:19,502 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'itemController' to allow for resolving potential circular references
-2019-10-21 16:08:19,503 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Processing injected method of bean 'itemController': AutowiredFieldElement for private com.taotao.rest.service.ItemService com.taotao.rest.controller.ItemController.itemService
-2019-10-21 16:08:19,504 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'itemServiceImpl'
-2019-10-21 16:08:19,504 [localhost-startStop-1] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]-[DEBUG] Autowiring by type from bean name 'itemController' to bean named 'itemServiceImpl'
-2019-10-21 16:08:19,504 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'itemController'
-2019-10-21 16:08:19,504 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'redisController'
-2019-10-21 16:08:19,504 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'redisController'
-2019-10-21 16:08:19,504 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Registered injected element on class [com.taotao.rest.controller.RedisController]: AutowiredFieldElement for private com.taotao.rest.service.RedisService com.taotao.rest.controller.RedisController.redisService
-2019-10-21 16:08:19,505 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'redisController' to allow for resolving potential circular references
-2019-10-21 16:08:19,506 [localhost-startStop-1] [org.springframework.beans.factory.annotation.InjectionMetadata]-[DEBUG] Processing injected method of bean 'redisController': AutowiredFieldElement for private com.taotao.rest.service.RedisService com.taotao.rest.controller.RedisController.redisService
-2019-10-21 16:08:19,506 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'redisServiceImpl'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]-[DEBUG] Autowiring by type from bean name 'redisController' to bean named 'redisServiceImpl'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'redisController'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,507 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
-2019-10-21 16:08:19,511 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,513 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,513 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
-2019-10-21 16:08:19,513 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
-2019-10-21 16:08:19,515 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,523 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,524 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
-2019-10-21 16:08:19,524 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
-2019-10-21 16:08:19,524 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#34f3be3e'
-2019-10-21 16:08:19,524 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,524 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,524 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,526 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,569 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,572 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#34f3be3e'
-2019-10-21 16:08:19,574 [localhost-startStop-1] [org.springframework.beans.BeanUtils]-[DEBUG] No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
-2019-10-21 16:08:19,574 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,576 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
-2019-10-21 16:08:19,576 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
-2019-10-21 16:08:19,576 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking for request mappings in application context: WebApplicationContext for namespace 'taotao-rest-servlet': startup date [Mon Oct 21 16:08:19 CST 2019]; parent: Root WebApplicationContext
-2019-10-21 16:08:19,587 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[INFO] Mapped "{[/content/list/{contentCategoryId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)
-2019-10-21 16:08:19,588 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[INFO] Mapped "{[/itemcat/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.taotao.rest.controller.ItemCatController.getItemCatList(java.lang.String)
-2019-10-21 16:08:19,588 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[INFO] Mapped "{[/item/info/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ItemController.getItemBaseInfo(java.lang.Long)
-2019-10-21 16:08:19,589 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[INFO] Mapped "{[/item/param/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ItemController.getItemParam(java.lang.Long)
-2019-10-21 16:08:19,589 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[INFO] Mapped "{[/item/desc/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ItemController.getItemDesc(java.lang.Long)
-2019-10-21 16:08:19,590 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[INFO] Mapped "{[/cache/sync/content/{contentCid}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.RedisController.contentCacheSync(java.lang.Long)
-2019-10-21 16:08:19,591 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
-2019-10-21 16:08:19,591 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,592 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
-2019-10-21 16:08:19,592 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
-2019-10-21 16:08:19,741 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,746 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,746 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#160c42f5'
-2019-10-21 16:08:19,750 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,750 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#160c42f5'
-2019-10-21 16:08:19,751 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#12cb0f7c'
-2019-10-21 16:08:19,754 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#12cb0f7c'
-2019-10-21 16:08:19,755 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#52af418f'
-2019-10-21 16:08:19,757 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#52af418f'
-2019-10-21 16:08:19,757 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4142932'
-2019-10-21 16:08:19,759 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4142932'
-2019-10-21 16:08:19,759 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#60ddbe57'
-2019-10-21 16:08:19,761 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#60ddbe57'
-2019-10-21 16:08:19,761 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4749a895'
-2019-10-21 16:08:19,767 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4749a895'
-2019-10-21 16:08:19,767 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4dbd07b9'
-2019-10-21 16:08:19,773 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4dbd07b9'
-2019-10-21 16:08:19,774 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#76c8b6c3'
-2019-10-21 16:08:19,774 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4149a09f'
-2019-10-21 16:08:19,778 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name '(inner bean)#4149a09f'
-2019-10-21 16:08:19,779 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4149a09f'
-2019-10-21 16:08:19,783 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#76c8b6c3'
-2019-10-21 16:08:19,784 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#7d4ece07'
-2019-10-21 16:08:19,788 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#7d4ece07'
-2019-10-21 16:08:19,789 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
-2019-10-21 16:08:19,789 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]-[INFO] Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-rest-servlet': startup date [Mon Oct 21 16:08:19 CST 2019]; parent: Root WebApplicationContext
-2019-10-21 16:08:19,804 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
-2019-10-21 16:08:19,804 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'mvcUriComponentsContributor'
-2019-10-21 16:08:19,804 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'mvcUriComponentsContributor'
-2019-10-21 16:08:19,804 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references
-2019-10-21 16:08:19,806 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#d5e2eed'
-2019-10-21 16:08:19,808 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,808 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#160c42f5#1'
-2019-10-21 16:08:19,808 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,809 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#160c42f5#1'
-2019-10-21 16:08:19,809 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#12cb0f7c#1'
-2019-10-21 16:08:19,809 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#12cb0f7c#1'
-2019-10-21 16:08:19,809 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#52af418f#1'
-2019-10-21 16:08:19,809 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#52af418f#1'
-2019-10-21 16:08:19,809 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4142932#1'
-2019-10-21 16:08:19,810 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4142932#1'
-2019-10-21 16:08:19,810 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#60ddbe57#1'
-2019-10-21 16:08:19,810 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#60ddbe57#1'
-2019-10-21 16:08:19,810 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4749a895#1'
-2019-10-21 16:08:19,812 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4749a895#1'
-2019-10-21 16:08:19,812 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4dbd07b9#1'
-2019-10-21 16:08:19,812 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4dbd07b9#1'
-2019-10-21 16:08:19,812 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#76c8b6c3#1'
-2019-10-21 16:08:19,812 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4149a09f#1'
-2019-10-21 16:08:19,813 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name '(inner bean)#4149a09f#1'
-2019-10-21 16:08:19,814 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4149a09f#1'
-2019-10-21 16:08:19,814 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#76c8b6c3#1'
-2019-10-21 16:08:19,814 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#7d4ece07#1'
-2019-10-21 16:08:19,815 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#7d4ece07#1'
-2019-10-21 16:08:19,815 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name '(inner bean)#d5e2eed'
-2019-10-21 16:08:19,815 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]-[INFO] Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-rest-servlet': startup date [Mon Oct 21 16:08:19 CST 2019]; parent: Root WebApplicationContext
-2019-10-21 16:08:19,815 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning eagerly cached instance of singleton bean 'mvcUriComponentsContributor' that is not fully initialized yet - a consequence of a circular reference
-2019-10-21 16:08:19,816 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#d5e2eed'
-2019-10-21 16:08:19,816 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-2019-10-21 16:08:19,816 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name 'mvcUriComponentsContributor'
-2019-10-21 16:08:19,816 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'mvcUriComponentsContributor'
-2019-10-21 16:08:19,816 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
-2019-10-21 16:08:19,816 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
-2019-10-21 16:08:19,816 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
-2019-10-21 16:08:19,819 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,823 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'mvcContentNegotiationManager'
-2019-10-21 16:08:19,823 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#12cb0f7c#2'
-2019-10-21 16:08:19,824 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#12cb0f7c#2'
-2019-10-21 16:08:19,824 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#52af418f#2'
-2019-10-21 16:08:19,824 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#52af418f#2'
-2019-10-21 16:08:19,824 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4142932#2'
-2019-10-21 16:08:19,824 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4142932#2'
-2019-10-21 16:08:19,824 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#60ddbe57#2'
-2019-10-21 16:08:19,825 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#60ddbe57#2'
-2019-10-21 16:08:19,825 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4749a895#2'
-2019-10-21 16:08:19,827 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4749a895#2'
-2019-10-21 16:08:19,827 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4dbd07b9#2'
-2019-10-21 16:08:19,827 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4dbd07b9#2'
-2019-10-21 16:08:19,827 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#76c8b6c3#2'
-2019-10-21 16:08:19,827 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#4149a09f#2'
-2019-10-21 16:08:19,827 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name '(inner bean)#4149a09f#2'
-2019-10-21 16:08:19,828 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#4149a09f#2'
-2019-10-21 16:08:19,828 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#76c8b6c3#2'
-2019-10-21 16:08:19,828 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean '(inner bean)#c1efc07'
-2019-10-21 16:08:19,828 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean '(inner bean)#c1efc07'
-2019-10-21 16:08:19,829 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
-2019-10-21 16:08:19,829 [localhost-startStop-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]-[DEBUG] Looking for exception mappings: WebApplicationContext for namespace 'taotao-rest-servlet': startup date [Mon Oct 21 16:08:19 CST 2019]; parent: Root WebApplicationContext
-2019-10-21 16:08:19,830 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
-2019-10-21 16:08:19,830 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
-2019-10-21 16:08:19,830 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
-2019-10-21 16:08:19,830 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,831 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
-2019-10-21 16:08:19,832 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
-2019-10-21 16:08:19,832 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
-2019-10-21 16:08:19,832 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,834 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
-2019-10-21 16:08:19,834 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
-2019-10-21 16:08:19,834 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
-2019-10-21 16:08:19,835 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
-2019-10-21 16:08:19,840 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Looking for URL mappings in application context: WebApplicationContext for namespace 'taotao-rest-servlet': startup date [Mon Oct 21 16:08:19 CST 2019]; parent: Root WebApplicationContext
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'contentController': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'itemCatController': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'itemController': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'redisController': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'environment': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'systemProperties': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'systemEnvironment': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'servletConfig': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'messageSource': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]-[DEBUG] Rejected bean name 'applicationEventMulticaster': no URL paths identified
-2019-10-21 16:08:19,841 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
-2019-10-21 16:08:19,842 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
-2019-10-21 16:08:19,842 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
-2019-10-21 16:08:19,842 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
-2019-10-21 16:08:19,844 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
-2019-10-21 16:08:19,844 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
-2019-10-21 16:08:19,844 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
-2019-10-21 16:08:19,844 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
-2019-10-21 16:08:19,846 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
-2019-10-21 16:08:19,846 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
-2019-10-21 16:08:19,846 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
-2019-10-21 16:08:19,851 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
-2019-10-21 16:08:19,854 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
-2019-10-21 16:08:19,854 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2019-10-21 16:08:19,854 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2019-10-21 16:08:19,854 [localhost-startStop-1] [org.springframework.web.context.support.XmlWebApplicationContext]-[DEBUG] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@68a09fbd]
-2019-10-21 16:08:19,855 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
-2019-10-21 16:08:19,855 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
-2019-10-21 16:08:19,855 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
-2019-10-21 16:08:19,857 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
-2019-10-21 16:08:19,857 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@2d08cb11]
-2019-10-21 16:08:19,857 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
-2019-10-21 16:08:19,861 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
-2019-10-21 16:08:19,861 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@6d30bff2]
-2019-10-21 16:08:19,861 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
-2019-10-21 16:08:19,861 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
-2019-10-21 16:08:19,862 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
-2019-10-21 16:08:19,862 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
-2019-10-21 16:08:19,862 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
-2019-10-21 16:08:19,862 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
-2019-10-21 16:08:19,862 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
-2019-10-21 16:08:19,862 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
-2019-10-21 16:08:19,863 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
-2019-10-21 16:08:19,865 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
-2019-10-21 16:08:19,866 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@133470e9]
-2019-10-21 16:08:19,866 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
-2019-10-21 16:08:19,867 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
-2019-10-21 16:08:19,870 [localhost-startStop-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
-2019-10-21 16:08:19,870 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@24547b18]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.core.env.PropertySourcesPropertyResolver]-[DEBUG] Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.core.env.PropertySourcesPropertyResolver]-[DEBUG] Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.core.env.PropertySourcesPropertyResolver]-[DEBUG] Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.jndi.JndiTemplate]-[DEBUG] Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.jndi.JndiLocatorDelegate]-[DEBUG] Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.jndi.JndiTemplate]-[DEBUG] Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.jndi.JndiPropertySource]-[DEBUG] JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.core.env.PropertySourcesPropertyResolver]-[DEBUG] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.core.env.PropertySourcesPropertyResolver]-[DEBUG] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.core.env.PropertySourcesPropertyResolver]-[DEBUG] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Published WebApplicationContext of servlet 'taotao-rest' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.taotao-rest]
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[INFO] FrameworkServlet 'taotao-rest': initialization completed in 470 ms
-2019-10-21 16:08:19,871 [localhost-startStop-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Servlet 'taotao-rest' configured successfully
-2019-10-21 16:08:44,184 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:08:44,187 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:08:44,190 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:08:44,191 [http-bio-8080-exec-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:08:44,192 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:08:44,303 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@1a855627
-2019-10-21 16:08:44,303 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@1a855627
-2019-10-21 16:08:44,329 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@1a855627] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:08:44,329 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:08:44,329 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:08:44,338 [http-bio-8080-exec-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'sqlSessionFactory'
-2019-10-21 16:12:52,146 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:12:52,146 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:12:52,146 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:12:52,146 [http-bio-8080-exec-3] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:12:52,146 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:12:52,149 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@3d9c8ae5
-2019-10-21 16:12:52,149 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@3d9c8ae5
-2019-10-21 16:12:52,150 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@3d9c8ae5] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:12:52,150 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:12:52,150 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:27:08,535 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:27:08,535 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:27:08,535 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:27:08,535 [http-bio-8080-exec-5] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:27:08,535 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:27:08,538 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@7c78dc31
-2019-10-21 16:27:08,538 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@7c78dc31
-2019-10-21 16:27:08,539 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@7c78dc31] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:27:08,539 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:27:08,539 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:31:55,220 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:31:55,221 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:31:55,221 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:31:55,221 [http-bio-8080-exec-7] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:31:55,221 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:31:55,228 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@a8187a8
-2019-10-21 16:31:55,228 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@a8187a8
-2019-10-21 16:31:55,231 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@a8187a8] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:31:55,231 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:31:55,231 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:39:19,292 [http-bio-8080-exec-9] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:39:19,292 [http-bio-8080-exec-9] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:39:19,292 [http-bio-8080-exec-9] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:39:19,292 [http-bio-8080-exec-9] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:39:19,292 [http-bio-8080-exec-9] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:39:19,296 [http-bio-8080-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@73620a35
-2019-10-21 16:39:19,296 [http-bio-8080-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@73620a35
-2019-10-21 16:39:19,297 [http-bio-8080-exec-9] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@73620a35] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:39:19,297 [http-bio-8080-exec-9] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:39:19,297 [http-bio-8080-exec-9] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:43:34,007 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:43:34,007 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:43:34,007 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:43:34,007 [http-bio-8080-exec-1] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:43:34,007 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:43:34,011 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@25991056
-2019-10-21 16:43:34,011 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@25991056
-2019-10-21 16:43:34,012 [http-bio-8080-exec-1] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@25991056] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:43:34,012 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:43:34,012 [http-bio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:46:06,244 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:46:06,244 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:46:06,244 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:46:06,244 [http-bio-8080-exec-3] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:46:06,244 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:46:06,249 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@10beeacb
-2019-10-21 16:46:06,250 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@10beeacb
-2019-10-21 16:46:06,250 [http-bio-8080-exec-3] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@10beeacb] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:46:06,250 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:46:06,251 [http-bio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:50:15,443 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:50:15,444 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:50:15,444 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:50:15,444 [http-bio-8080-exec-5] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:50:15,444 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:50:15,447 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@322a3d97
-2019-10-21 16:50:15,447 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@322a3d97
-2019-10-21 16:50:15,448 [http-bio-8080-exec-5] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@322a3d97] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:50:15,448 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:50:15,448 [http-bio-8080-exec-5] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
-2019-10-21 16:50:28,379 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] DispatcherServlet with name 'taotao-rest' processing GET request for [/rest/content/list/89]
-2019-10-21 16:50:28,379 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Looking up handler method for path /content/list/89
-2019-10-21 16:50:28,379 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]-[DEBUG] Returning handler method [public com.taotao.common.pojo.TaotaoResult com.taotao.rest.controller.ContentController.getContentList(java.lang.Long)]
-2019-10-21 16:50:28,379 [http-bio-8080-exec-7] [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[DEBUG] Returning cached instance of singleton bean 'contentController'
-2019-10-21 16:50:28,379 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Last-Modified value for [/rest/content/list/89] is: -1
-2019-10-21 16:50:28,380 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] Invoking ResponseBodyAdvice chain for body=com.taotao.common.pojo.TaotaoResult@4903acec
-2019-10-21 16:50:28,380 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdviceChain]-[DEBUG] After ResponseBodyAdvice chain body=com.taotao.common.pojo.TaotaoResult@4903acec
-2019-10-21 16:50:28,381 [http-bio-8080-exec-7] [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor]-[DEBUG] Written [com.taotao.common.pojo.TaotaoResult@4903acec] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4f2a418d]
-2019-10-21 16:50:28,381 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Null ModelAndView returned to DispatcherServlet with name 'taotao-rest': assuming HandlerAdapter completed request handling
-2019-10-21 16:50:28,381 [http-bio-8080-exec-7] [org.springframework.web.servlet.DispatcherServlet]-[DEBUG] Successfully completed request
+2019-10-22 14:38:14,374 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection leased: [id: 2][route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:38:14,374 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Stale connection check
+2019-10-22 14:38:14,375 [main] [org.apache.http.client.protocol.RequestAddCookies]-[DEBUG] CookieSpec selected: best-match
+2019-10-22 14:38:14,375 [main] [org.apache.http.client.protocol.RequestAuthCache]-[DEBUG] Auth cache not set in the context
+2019-10-22 14:38:14,375 [main] [org.apache.http.client.protocol.RequestTargetAuthentication]-[DEBUG] Target auth state: UNCHALLENGED
+2019-10-22 14:38:14,376 [main] [org.apache.http.client.protocol.RequestProxyAuthentication]-[DEBUG] Proxy auth state: UNCHALLENGED
+2019-10-22 14:38:14,376 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Attempt 1 to execute request
+2019-10-22 14:38:14,376 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Sending request: POST /solr/update HTTP/1.1
+2019-10-22 14:38:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "POST /solr/update HTTP/1.1[\r][\n]"
+2019-10-22 14:38:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-10-22 14:38:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+2019-10-22 14:38:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Length: 67[\r][\n]"
+2019-10-22 14:38:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "Host: 192.168.5.130:8080[\r][\n]"
+2019-10-22 14:38:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "Connection: Keep-Alive[\r][\n]"
+2019-10-22 14:38:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:38:14,377 [main] [org.apache.http.headers]-[DEBUG] >> POST /solr/update HTTP/1.1
+2019-10-22 14:38:14,377 [main] [org.apache.http.headers]-[DEBUG] >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-10-22 14:38:14,377 [main] [org.apache.http.headers]-[DEBUG] >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+2019-10-22 14:38:14,377 [main] [org.apache.http.headers]-[DEBUG] >> Content-Length: 67
+2019-10-22 14:38:14,377 [main] [org.apache.http.headers]-[DEBUG] >> Host: 192.168.5.130:8080
+2019-10-22 14:38:14,377 [main] [org.apache.http.headers]-[DEBUG] >> Connection: Keep-Alive
+2019-10-22 14:38:14,377 [main] [org.apache.http.wire]-[DEBUG]  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+2019-10-22 14:38:14,458 [main] [org.apache.http.wire]-[DEBUG]  << "HTTP/1.1 200 OK[\r][\n]"
+2019-10-22 14:38:14,459 [main] [org.apache.http.wire]-[DEBUG]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2019-10-22 14:38:14,459 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Type: application/octet-stream[\r][\n]"
+2019-10-22 14:38:14,459 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Length: 41[\r][\n]"
+2019-10-22 14:38:14,459 [main] [org.apache.http.wire]-[DEBUG]  << "Date: Tue, 22 Oct 2019 06:37:48 GMT[\r][\n]"
+2019-10-22 14:38:14,459 [main] [org.apache.http.wire]-[DEBUG]  << "[\r][\n]"
+2019-10-22 14:38:14,459 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Receiving response: HTTP/1.1 200 OK
+2019-10-22 14:38:14,459 [main] [org.apache.http.headers]-[DEBUG] << HTTP/1.1 200 OK
+2019-10-22 14:38:14,459 [main] [org.apache.http.headers]-[DEBUG] << Server: Apache-Coyote/1.1
+2019-10-22 14:38:14,459 [main] [org.apache.http.headers]-[DEBUG] << Content-Type: application/octet-stream
+2019-10-22 14:38:14,459 [main] [org.apache.http.headers]-[DEBUG] << Content-Length: 41
+2019-10-22 14:38:14,459 [main] [org.apache.http.headers]-[DEBUG] << Date: Tue, 22 Oct 2019 06:37:48 GMT
+2019-10-22 14:38:14,459 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Connection can be kept alive indefinitely
+2019-10-22 14:38:14,459 [main] [org.apache.http.wire]-[DEBUG]  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeP[0x5]"
+2019-10-22 14:38:14,460 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection [id: 2][route: {}->http://192.168.5.130:8080] can be kept alive indefinitely
+2019-10-22 14:38:14,460 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection released: [id: 2][route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:13,968 [main] [org.apache.solr.client.solrj.impl.HttpClientUtil]-[DEBUG] Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+2019-10-22 14:45:14,258 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection request: [route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+2019-10-22 14:45:14,269 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection leased: [id: 0][route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,271 [main] [org.apache.http.impl.conn.DefaultClientConnectionOperator]-[DEBUG] Connecting to 192.168.5.130:8080
+2019-10-22 14:45:14,301 [main] [org.apache.http.client.protocol.RequestAddCookies]-[DEBUG] CookieSpec selected: best-match
+2019-10-22 14:45:14,311 [main] [org.apache.http.client.protocol.RequestAuthCache]-[DEBUG] Auth cache not set in the context
+2019-10-22 14:45:14,312 [main] [org.apache.http.client.protocol.RequestTargetAuthentication]-[DEBUG] Target auth state: UNCHALLENGED
+2019-10-22 14:45:14,312 [main] [org.apache.http.client.protocol.RequestProxyAuthentication]-[DEBUG] Proxy auth state: UNCHALLENGED
+2019-10-22 14:45:14,312 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Attempt 1 to execute request
+2019-10-22 14:45:14,312 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Sending request: GET /solr/select?q=*%3A*&start=20&rows=50&wt=javabin&version=2 HTTP/1.1
+2019-10-22 14:45:14,313 [main] [org.apache.http.wire]-[DEBUG]  >> "GET /solr/select?q=*%3A*&start=20&rows=50&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+2019-10-22 14:45:14,313 [main] [org.apache.http.wire]-[DEBUG]  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+2019-10-22 14:45:14,314 [main] [org.apache.http.wire]-[DEBUG]  >> "Host: 192.168.5.130:8080[\r][\n]"
+2019-10-22 14:45:14,314 [main] [org.apache.http.wire]-[DEBUG]  >> "Connection: Keep-Alive[\r][\n]"
+2019-10-22 14:45:14,314 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,314 [main] [org.apache.http.headers]-[DEBUG] >> GET /solr/select?q=*%3A*&start=20&rows=50&wt=javabin&version=2 HTTP/1.1
+2019-10-22 14:45:14,314 [main] [org.apache.http.headers]-[DEBUG] >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+2019-10-22 14:45:14,314 [main] [org.apache.http.headers]-[DEBUG] >> Host: 192.168.5.130:8080
+2019-10-22 14:45:14,314 [main] [org.apache.http.headers]-[DEBUG] >> Connection: Keep-Alive
+2019-10-22 14:45:14,316 [main] [org.apache.http.wire]-[DEBUG]  << "HTTP/1.1 200 OK[\r][\n]"
+2019-10-22 14:45:14,317 [main] [org.apache.http.wire]-[DEBUG]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2019-10-22 14:45:14,317 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Type: application/octet-stream[\r][\n]"
+2019-10-22 14:45:14,317 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Length: 119[\r][\n]"
+2019-10-22 14:45:14,317 [main] [org.apache.http.wire]-[DEBUG]  << "Date: Tue, 22 Oct 2019 06:44:48 GMT[\r][\n]"
+2019-10-22 14:45:14,317 [main] [org.apache.http.wire]-[DEBUG]  << "[\r][\n]"
+2019-10-22 14:45:14,318 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Receiving response: HTTP/1.1 200 OK
+2019-10-22 14:45:14,318 [main] [org.apache.http.headers]-[DEBUG] << HTTP/1.1 200 OK
+2019-10-22 14:45:14,318 [main] [org.apache.http.headers]-[DEBUG] << Server: Apache-Coyote/1.1
+2019-10-22 14:45:14,318 [main] [org.apache.http.headers]-[DEBUG] << Content-Type: application/octet-stream
+2019-10-22 14:45:14,318 [main] [org.apache.http.headers]-[DEBUG] << Content-Length: 119
+2019-10-22 14:45:14,318 [main] [org.apache.http.headers]-[DEBUG] << Date: Tue, 22 Oct 2019 06:44:48 GMT
+2019-10-22 14:45:14,320 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Connection can be kept alive indefinitely
+2019-10-22 14:45:14,333 [main] [org.apache.http.wire]-[DEBUG]  << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime[0x6][0x0][0x0][0x0][0x0][0xe0]&params[0xa5][0xe0]!q#*:*[0xe0]%start"20[0xe0]$rows"50[0xe0]"wt'javabin[0xe0]'version!2[0xe0](response[0xc][0x83]at[0x1][0x0][0x80]"
+2019-10-22 14:45:14,335 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection [id: 0][route: {}->http://192.168.5.130:8080] can be kept alive indefinitely
+2019-10-22 14:45:14,335 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection released: [id: 0][route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,336 [main] [org.apache.solr.client.solrj.impl.HttpClientUtil]-[DEBUG] Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+2019-10-22 14:45:14,340 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection request: [route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+2019-10-22 14:45:14,341 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection leased: [id: 1][route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,341 [main] [org.apache.http.impl.conn.DefaultClientConnectionOperator]-[DEBUG] Connecting to 192.168.5.130:8080
+2019-10-22 14:45:14,342 [main] [org.apache.http.client.protocol.RequestAddCookies]-[DEBUG] CookieSpec selected: best-match
+2019-10-22 14:45:14,342 [main] [org.apache.http.client.protocol.RequestAuthCache]-[DEBUG] Auth cache not set in the context
+2019-10-22 14:45:14,342 [main] [org.apache.http.client.protocol.RequestTargetAuthentication]-[DEBUG] Target auth state: UNCHALLENGED
+2019-10-22 14:45:14,343 [main] [org.apache.http.client.protocol.RequestProxyAuthentication]-[DEBUG] Proxy auth state: UNCHALLENGED
+2019-10-22 14:45:14,343 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Attempt 1 to execute request
+2019-10-22 14:45:14,343 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+2019-10-22 14:45:14,343 [main] [org.apache.http.wire]-[DEBUG]  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+2019-10-22 14:45:14,343 [main] [org.apache.http.wire]-[DEBUG]  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+2019-10-22 14:45:14,343 [main] [org.apache.http.wire]-[DEBUG]  >> "Transfer-Encoding: chunked[\r][\n]"
+2019-10-22 14:45:14,343 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+2019-10-22 14:45:14,344 [main] [org.apache.http.wire]-[DEBUG]  >> "Host: 192.168.5.130:8080[\r][\n]"
+2019-10-22 14:45:14,344 [main] [org.apache.http.wire]-[DEBUG]  >> "Connection: Keep-Alive[\r][\n]"
+2019-10-22 14:45:14,344 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,344 [main] [org.apache.http.headers]-[DEBUG] >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+2019-10-22 14:45:14,344 [main] [org.apache.http.headers]-[DEBUG] >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+2019-10-22 14:45:14,344 [main] [org.apache.http.headers]-[DEBUG] >> Transfer-Encoding: chunked
+2019-10-22 14:45:14,344 [main] [org.apache.http.headers]-[DEBUG] >> Content-Type: application/xml; charset=UTF-8
+2019-10-22 14:45:14,344 [main] [org.apache.http.headers]-[DEBUG] >> Host: 192.168.5.130:8080
+2019-10-22 14:45:14,344 [main] [org.apache.http.headers]-[DEBUG] >> Connection: Keep-Alive
+2019-10-22 14:45:14,345 [main] [org.apache.http.wire]-[DEBUG]  >> "23[\r][\n]"
+2019-10-22 14:45:14,345 [main] [org.apache.http.wire]-[DEBUG]  >> "<delete><query>*:*</query></delete>"
+2019-10-22 14:45:14,345 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,345 [main] [org.apache.http.wire]-[DEBUG]  >> "0[\r][\n]"
+2019-10-22 14:45:14,345 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,367 [main] [org.apache.http.wire]-[DEBUG]  << "HTTP/1.1 200 OK[\r][\n]"
+2019-10-22 14:45:14,368 [main] [org.apache.http.wire]-[DEBUG]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2019-10-22 14:45:14,368 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Type: application/octet-stream[\r][\n]"
+2019-10-22 14:45:14,368 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Length: 41[\r][\n]"
+2019-10-22 14:45:14,368 [main] [org.apache.http.wire]-[DEBUG]  << "Date: Tue, 22 Oct 2019 06:44:48 GMT[\r][\n]"
+2019-10-22 14:45:14,368 [main] [org.apache.http.wire]-[DEBUG]  << "[\r][\n]"
+2019-10-22 14:45:14,368 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Receiving response: HTTP/1.1 200 OK
+2019-10-22 14:45:14,368 [main] [org.apache.http.headers]-[DEBUG] << HTTP/1.1 200 OK
+2019-10-22 14:45:14,368 [main] [org.apache.http.headers]-[DEBUG] << Server: Apache-Coyote/1.1
+2019-10-22 14:45:14,368 [main] [org.apache.http.headers]-[DEBUG] << Content-Type: application/octet-stream
+2019-10-22 14:45:14,368 [main] [org.apache.http.headers]-[DEBUG] << Content-Length: 41
+2019-10-22 14:45:14,368 [main] [org.apache.http.headers]-[DEBUG] << Date: Tue, 22 Oct 2019 06:44:48 GMT
+2019-10-22 14:45:14,369 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Connection can be kept alive indefinitely
+2019-10-22 14:45:14,369 [main] [org.apache.http.wire]-[DEBUG]  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeU[0x1]"
+2019-10-22 14:45:14,370 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection [id: 1][route: {}->http://192.168.5.130:8080] can be kept alive indefinitely
+2019-10-22 14:45:14,370 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection released: [id: 1][route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,372 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection request: [route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,373 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection leased: [id: 1][route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,373 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Stale connection check
+2019-10-22 14:45:14,374 [main] [org.apache.http.client.protocol.RequestAddCookies]-[DEBUG] CookieSpec selected: best-match
+2019-10-22 14:45:14,374 [main] [org.apache.http.client.protocol.RequestAuthCache]-[DEBUG] Auth cache not set in the context
+2019-10-22 14:45:14,374 [main] [org.apache.http.client.protocol.RequestTargetAuthentication]-[DEBUG] Target auth state: UNCHALLENGED
+2019-10-22 14:45:14,374 [main] [org.apache.http.client.protocol.RequestProxyAuthentication]-[DEBUG] Proxy auth state: UNCHALLENGED
+2019-10-22 14:45:14,374 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Attempt 1 to execute request
+2019-10-22 14:45:14,375 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Sending request: POST /solr/update HTTP/1.1
+2019-10-22 14:45:14,375 [main] [org.apache.http.wire]-[DEBUG]  >> "POST /solr/update HTTP/1.1[\r][\n]"
+2019-10-22 14:45:14,375 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-10-22 14:45:14,375 [main] [org.apache.http.wire]-[DEBUG]  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+2019-10-22 14:45:14,375 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Length: 67[\r][\n]"
+2019-10-22 14:45:14,375 [main] [org.apache.http.wire]-[DEBUG]  >> "Host: 192.168.5.130:8080[\r][\n]"
+2019-10-22 14:45:14,375 [main] [org.apache.http.wire]-[DEBUG]  >> "Connection: Keep-Alive[\r][\n]"
+2019-10-22 14:45:14,375 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,376 [main] [org.apache.http.headers]-[DEBUG] >> POST /solr/update HTTP/1.1
+2019-10-22 14:45:14,376 [main] [org.apache.http.headers]-[DEBUG] >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-10-22 14:45:14,376 [main] [org.apache.http.headers]-[DEBUG] >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+2019-10-22 14:45:14,376 [main] [org.apache.http.headers]-[DEBUG] >> Content-Length: 67
+2019-10-22 14:45:14,376 [main] [org.apache.http.headers]-[DEBUG] >> Host: 192.168.5.130:8080
+2019-10-22 14:45:14,376 [main] [org.apache.http.headers]-[DEBUG] >> Connection: Keep-Alive
+2019-10-22 14:45:14,376 [main] [org.apache.http.wire]-[DEBUG]  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+2019-10-22 14:45:14,393 [main] [org.apache.http.wire]-[DEBUG]  << "HTTP/1.1 200 OK[\r][\n]"
+2019-10-22 14:45:14,393 [main] [org.apache.http.wire]-[DEBUG]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2019-10-22 14:45:14,393 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Type: application/octet-stream[\r][\n]"
+2019-10-22 14:45:14,393 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Length: 41[\r][\n]"
+2019-10-22 14:45:14,393 [main] [org.apache.http.wire]-[DEBUG]  << "Date: Tue, 22 Oct 2019 06:44:48 GMT[\r][\n]"
+2019-10-22 14:45:14,393 [main] [org.apache.http.wire]-[DEBUG]  << "[\r][\n]"
+2019-10-22 14:45:14,393 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Receiving response: HTTP/1.1 200 OK
+2019-10-22 14:45:14,394 [main] [org.apache.http.headers]-[DEBUG] << HTTP/1.1 200 OK
+2019-10-22 14:45:14,394 [main] [org.apache.http.headers]-[DEBUG] << Server: Apache-Coyote/1.1
+2019-10-22 14:45:14,394 [main] [org.apache.http.headers]-[DEBUG] << Content-Type: application/octet-stream
+2019-10-22 14:45:14,394 [main] [org.apache.http.headers]-[DEBUG] << Content-Length: 41
+2019-10-22 14:45:14,394 [main] [org.apache.http.headers]-[DEBUG] << Date: Tue, 22 Oct 2019 06:44:48 GMT
+2019-10-22 14:45:14,394 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Connection can be kept alive indefinitely
+2019-10-22 14:45:14,394 [main] [org.apache.http.wire]-[DEBUG]  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime_[0x0]"
+2019-10-22 14:45:14,394 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection [id: 1][route: {}->http://192.168.5.130:8080] can be kept alive indefinitely
+2019-10-22 14:45:14,395 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection released: [id: 1][route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,395 [main] [org.apache.solr.client.solrj.impl.HttpClientUtil]-[DEBUG] Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+2019-10-22 14:45:14,397 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection request: [route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+2019-10-22 14:45:14,398 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection leased: [id: 2][route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,398 [main] [org.apache.http.impl.conn.DefaultClientConnectionOperator]-[DEBUG] Connecting to 192.168.5.130:8080
+2019-10-22 14:45:14,399 [main] [org.apache.http.client.protocol.RequestAddCookies]-[DEBUG] CookieSpec selected: best-match
+2019-10-22 14:45:14,399 [main] [org.apache.http.client.protocol.RequestAuthCache]-[DEBUG] Auth cache not set in the context
+2019-10-22 14:45:14,399 [main] [org.apache.http.client.protocol.RequestTargetAuthentication]-[DEBUG] Target auth state: UNCHALLENGED
+2019-10-22 14:45:14,399 [main] [org.apache.http.client.protocol.RequestProxyAuthentication]-[DEBUG] Proxy auth state: UNCHALLENGED
+2019-10-22 14:45:14,399 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Attempt 1 to execute request
+2019-10-22 14:45:14,399 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Sending request: POST /solr/update?wt=javabin&version=2 HTTP/1.1
+2019-10-22 14:45:14,399 [main] [org.apache.http.wire]-[DEBUG]  >> "POST /solr/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "Transfer-Encoding: chunked[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "Host: 192.168.5.130:8080[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "Connection: Keep-Alive[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.headers]-[DEBUG] >> POST /solr/update?wt=javabin&version=2 HTTP/1.1
+2019-10-22 14:45:14,400 [main] [org.apache.http.headers]-[DEBUG] >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+2019-10-22 14:45:14,400 [main] [org.apache.http.headers]-[DEBUG] >> Transfer-Encoding: chunked
+2019-10-22 14:45:14,400 [main] [org.apache.http.headers]-[DEBUG] >> Content-Type: application/xml; charset=UTF-8
+2019-10-22 14:45:14,400 [main] [org.apache.http.headers]-[DEBUG] >> Host: 192.168.5.130:8080
+2019-10-22 14:45:14,400 [main] [org.apache.http.headers]-[DEBUG] >> Connection: Keep-Alive
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "96[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "<add><doc boost="1.0"><field name="id">test001</field><field name="item_title">[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x95][0x86][0xe5][0x93][0x81]2</field><field name="item_price">54321</field></doc></add>"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "0[\r][\n]"
+2019-10-22 14:45:14,400 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,407 [main] [org.apache.http.wire]-[DEBUG]  << "HTTP/1.1 200 OK[\r][\n]"
+2019-10-22 14:45:14,408 [main] [org.apache.http.wire]-[DEBUG]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2019-10-22 14:45:14,408 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Type: application/octet-stream[\r][\n]"
+2019-10-22 14:45:14,408 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Length: 40[\r][\n]"
+2019-10-22 14:45:14,408 [main] [org.apache.http.wire]-[DEBUG]  << "Date: Tue, 22 Oct 2019 06:44:48 GMT[\r][\n]"
+2019-10-22 14:45:14,408 [main] [org.apache.http.wire]-[DEBUG]  << "[\r][\n]"
+2019-10-22 14:45:14,408 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Receiving response: HTTP/1.1 200 OK
+2019-10-22 14:45:14,408 [main] [org.apache.http.headers]-[DEBUG] << HTTP/1.1 200 OK
+2019-10-22 14:45:14,408 [main] [org.apache.http.headers]-[DEBUG] << Server: Apache-Coyote/1.1
+2019-10-22 14:45:14,409 [main] [org.apache.http.headers]-[DEBUG] << Content-Type: application/octet-stream
+2019-10-22 14:45:14,409 [main] [org.apache.http.headers]-[DEBUG] << Content-Length: 40
+2019-10-22 14:45:14,409 [main] [org.apache.http.headers]-[DEBUG] << Date: Tue, 22 Oct 2019 06:44:48 GMT
+2019-10-22 14:45:14,409 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Connection can be kept alive indefinitely
+2019-10-22 14:45:14,409 [main] [org.apache.http.wire]-[DEBUG]  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeF"
+2019-10-22 14:45:14,409 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection [id: 2][route: {}->http://192.168.5.130:8080] can be kept alive indefinitely
+2019-10-22 14:45:14,409 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection released: [id: 2][route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,410 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection request: [route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,410 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection leased: [id: 2][route: {}->http://192.168.5.130:8080][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+2019-10-22 14:45:14,410 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Stale connection check
+2019-10-22 14:45:14,411 [main] [org.apache.http.client.protocol.RequestAddCookies]-[DEBUG] CookieSpec selected: best-match
+2019-10-22 14:45:14,411 [main] [org.apache.http.client.protocol.RequestAuthCache]-[DEBUG] Auth cache not set in the context
+2019-10-22 14:45:14,411 [main] [org.apache.http.client.protocol.RequestTargetAuthentication]-[DEBUG] Target auth state: UNCHALLENGED
+2019-10-22 14:45:14,411 [main] [org.apache.http.client.protocol.RequestProxyAuthentication]-[DEBUG] Proxy auth state: UNCHALLENGED
+2019-10-22 14:45:14,411 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Attempt 1 to execute request
+2019-10-22 14:45:14,411 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Sending request: POST /solr/update HTTP/1.1
+2019-10-22 14:45:14,412 [main] [org.apache.http.wire]-[DEBUG]  >> "POST /solr/update HTTP/1.1[\r][\n]"
+2019-10-22 14:45:14,412 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-10-22 14:45:14,412 [main] [org.apache.http.wire]-[DEBUG]  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+2019-10-22 14:45:14,412 [main] [org.apache.http.wire]-[DEBUG]  >> "Content-Length: 67[\r][\n]"
+2019-10-22 14:45:14,412 [main] [org.apache.http.wire]-[DEBUG]  >> "Host: 192.168.5.130:8080[\r][\n]"
+2019-10-22 14:45:14,412 [main] [org.apache.http.wire]-[DEBUG]  >> "Connection: Keep-Alive[\r][\n]"
+2019-10-22 14:45:14,412 [main] [org.apache.http.wire]-[DEBUG]  >> "[\r][\n]"
+2019-10-22 14:45:14,412 [main] [org.apache.http.headers]-[DEBUG] >> POST /solr/update HTTP/1.1
+2019-10-22 14:45:14,412 [main] [org.apache.http.headers]-[DEBUG] >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-10-22 14:45:14,412 [main] [org.apache.http.headers]-[DEBUG] >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+2019-10-22 14:45:14,412 [main] [org.apache.http.headers]-[DEBUG] >> Content-Length: 67
+2019-10-22 14:45:14,412 [main] [org.apache.http.headers]-[DEBUG] >> Host: 192.168.5.130:8080
+2019-10-22 14:45:14,413 [main] [org.apache.http.headers]-[DEBUG] >> Connection: Keep-Alive
+2019-10-22 14:45:14,413 [main] [org.apache.http.wire]-[DEBUG]  >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+2019-10-22 14:45:14,447 [main] [org.apache.http.wire]-[DEBUG]  << "HTTP/1.1 200 OK[\r][\n]"
+2019-10-22 14:45:14,447 [main] [org.apache.http.wire]-[DEBUG]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2019-10-22 14:45:14,447 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Type: application/octet-stream[\r][\n]"
+2019-10-22 14:45:14,447 [main] [org.apache.http.wire]-[DEBUG]  << "Content-Length: 41[\r][\n]"
+2019-10-22 14:45:14,447 [main] [org.apache.http.wire]-[DEBUG]  << "Date: Tue, 22 Oct 2019 06:44:48 GMT[\r][\n]"
+2019-10-22 14:45:14,447 [main] [org.apache.http.wire]-[DEBUG]  << "[\r][\n]"
+2019-10-22 14:45:14,447 [main] [org.apache.http.impl.conn.DefaultClientConnection]-[DEBUG] Receiving response: HTTP/1.1 200 OK
+2019-10-22 14:45:14,447 [main] [org.apache.http.headers]-[DEBUG] << HTTP/1.1 200 OK
+2019-10-22 14:45:14,448 [main] [org.apache.http.headers]-[DEBUG] << Server: Apache-Coyote/1.1
+2019-10-22 14:45:14,448 [main] [org.apache.http.headers]-[DEBUG] << Content-Type: application/octet-stream
+2019-10-22 14:45:14,448 [main] [org.apache.http.headers]-[DEBUG] << Content-Length: 41
+2019-10-22 14:45:14,448 [main] [org.apache.http.headers]-[DEBUG] << Date: Tue, 22 Oct 2019 06:44:48 GMT
+2019-10-22 14:45:14,448 [main] [org.apache.http.impl.client.SystemDefaultHttpClient]-[DEBUG] Connection can be kept alive indefinitely
+2019-10-22 14:45:14,448 [main] [org.apache.http.wire]-[DEBUG]  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeU[0x1]"
+2019-10-22 14:45:14,448 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection [id: 2][route: {}->http://192.168.5.130:8080] can be kept alive indefinitely
+2019-10-22 14:45:14,448 [main] [org.apache.http.impl.conn.PoolingClientConnectionManager]-[DEBUG] Connection released: [id: 2][route: {}->http://192.168.5.130:8080][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]

@@ -10,13 +10,12 @@ import com.taotao.portal.pojo.Order;
 import com.taotao.portal.service.OrderService;
 
 /**
- * 订单处理Service
- * <p>Title: OrderServiceImpl</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月16日下午2:45:08
- * @version 1.0
+ * 
+ * @ClassName: OrderServiceImpl
+ * @Description: 订单处理Service
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
  */
 @Service
 public class OrderServiceImpl implements OrderService {

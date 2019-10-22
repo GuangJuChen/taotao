@@ -17,13 +17,12 @@ import com.taotao.portal.pojo.ItemInfo;
 import com.taotao.portal.service.ItemService;
 
 /**
- * 商品信息管理Service
- * <p>Title: ItemServiceImpl</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月12日下午2:41:57
- * @version 1.0
+ * 
+ * @ClassName: ItemServiceImpl
+ * @Description: 商品信息管理Service
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
  */
 @Service
 public class ItemServiceImpl implements ItemService {

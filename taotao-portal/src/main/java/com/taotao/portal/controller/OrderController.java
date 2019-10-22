@@ -18,6 +18,14 @@ import com.taotao.portal.pojo.Order;
 import com.taotao.portal.service.CartService;
 import com.taotao.portal.service.OrderService;
 
+/**
+ * 
+ * @ClassName: OrderController
+ * @Description: 购物车
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
+ */
 @Controller
 @RequestMapping("/order")
 public class OrderController {

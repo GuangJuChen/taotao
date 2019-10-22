@@ -17,13 +17,12 @@ import com.taotao.search.pojo.Item;
 import com.taotao.search.pojo.SearchResult;
 
 /**
- * 商品搜索Dao
- * <p>Title: SearchDaoImpl</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月11日下午3:26:25
- * @version 1.0
+ * 
+ * @ClassName: SearchDaoImpl
+ * @Description: 商品搜索Dao
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
  */
 @Repository
 public class SearchDaoImpl implements SearchDao {

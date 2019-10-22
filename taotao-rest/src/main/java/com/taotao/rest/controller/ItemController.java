@@ -10,13 +10,12 @@ import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.rest.service.ItemService;
 
 /**
- * 商品信息Controller
- * <p>Title: ItemController</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月12日上午10:22:11
- * @version 1.0
+ * 
+ * @ClassName: ItemController
+ * @Description: 商品信息Controller
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
  */
 @Controller
 @RequestMapping("/item")

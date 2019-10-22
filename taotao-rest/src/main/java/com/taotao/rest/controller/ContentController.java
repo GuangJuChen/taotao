@@ -14,13 +14,12 @@ import com.taotao.pojo.TbContent;
 import com.taotao.rest.service.ContentService;
 
 /**
- * 内容管理Controller
- * <p>Title: ContentController</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月8日下午3:09:16
- * @version 1.0
+ * 
+ * @ClassName: ContentController
+ * @Description: 内容管理Controller
+ * @author chenguangju
+ * @date 2019年10月22日
+ *
  */
 @Controller
 @RequestMapping("/content")
